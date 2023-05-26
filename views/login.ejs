@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+
+    <title>LOGIN CON EXPRESS + JWT</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/sign-in.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="text-center">
+    <main class="form-signin w-100 m-auto shadow-lg p-3 mb-5">
+      <form id="formLogin" action="/login" method="post">
+        <img
+          class="mb-4"
+          src="img/person-up.svg"
+          alt=""
+          width="72"
+          height="57"
+        />
+        <!-- <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1> -->
+        <div class="form-floating">
+          <input
+            type="tex"
+            class="form-control"
+            id="user"
+            name="user"
+            placeholder="Usuario"
+          />
+          <label for="user">Usuario</label>
+        </div>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="pass"
+            name="pass"
+            placeholder="Contraceña"
+          />
+          <label for="pass">Contraceña</label>
+        </div>
+        <!-- <div class="checkbox mb-3">
+          <label>
+            <input type="checkbox" value="remember-me" /> Remember me
+          </label>
+        </div> -->
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          Iniciar sesión
+        </button>
+      </form>
+      <br>
+      <a type="button" class="w-100 btn btn-lg btn-bd-primary">Registrarse</a>
+      <p class="mt-5 mb-3 text-body-secondary">&copy; TS2023</p>
+    </main>
+  </body>
+</html>

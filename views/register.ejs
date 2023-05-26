@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>REGISTRARSE CON EXPRESS + JWT</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="css/sign-in.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <body class="text-center">
+    <main class="form-signin w-100 m-auto shadow-lg p-3 mb-5">
+      <form id="" action="/register" method="post">
+        <h1 class="h3 mb-3 fw-normal">Registrate</h1>
+        <h4>Fácil y rápido</h4>
+        <div class="form-floating">
+          <input
+            type="tex"
+            class="form-control"
+            id="name"
+            name="name"
+            placeholder="Nombre usuario"
+          />
+          <label for="name">Nombre de usuario</label>
+        </div>
+        <br>
+        <div class="form-floating">
+          <input
+            type="tex"
+            class="form-control"
+            id="email"
+            name="email"
+            placeholder="Correo electronico"
+          />
+          <label for="email">Correo electronico</label>
+        </div>
+        <br>
+        <div class="form-floating">
+          <input
+            type="password"
+            class="form-control"
+            id="pass"
+            name="pass"
+            placeholder="Contraseña"
+          />
+          <label for="pass">Contraseña</label>
+        </div>
+        <button class="w-100 btn btn-lg btn-primary" type="submit">
+          SIGUIENTE
+        </button>
+      </form>
+    </main>
+  </body>
